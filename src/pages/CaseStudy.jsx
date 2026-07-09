@@ -12,7 +12,7 @@ import Overview from "../components/overview/Overview";
 import Numbers from "../components/numbers/Numbers";
 import VisualIdentity from "../components/visual-identity/VisualIdentity";
 import CTAAction from "../components/cta-action/CTAAction";
-import RecentWorks from "../components/recent-works/RecentWorls";
+import RecentWorks from "../components/recent-works/RecentWorks";
 
 function CaseStudy() {
   return (
