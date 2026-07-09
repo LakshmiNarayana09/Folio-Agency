@@ -4,58 +4,57 @@ function CTAContent() {
   return (
     <div
       className="
-        relative
-        lg:absolute
-        z-40
-
         w-full
-        max-w-[367px]
+        max-w-[380px]
 
-        px-6
-        py-10
-        sm:px-10
-        sm:py-12
-        lg:px-0
-        lg:py-0
-
-        lg:top-[134px]
-        lg:right-[90px]
+        text-center
+        lg:text-left
 
         flex
         flex-col
         justify-center
-        lg:justify-between
 
-        h-auto
-        lg:h-[360px]
+        py-8
+        lg:py-0
       "
     >
       
       <div>
-        <div className="flex items-center gap-4 lg:gap-6">
-          <span className="text-white text-sm sm:text-base lg:text-[18px] font-semibold">
+        <div
+          className="
+            flex
+            items-center
+
+            justify-center
+            lg:justify-start
+
+            gap-4
+            mb-6
+          "
+        >
+          <span className="text-white font-semibold text-sm sm:text-base">
             04
           </span>
 
-          <span className="text-white text-sm sm:text-base lg:text-[18px] font-semibold">
+          <span className="text-white font-semibold text-sm sm:text-base">
             Call to action
           </span>
         </div>
 
         <h2
           className="
-            mt-5
-            lg:mt-6
             text-white
             font-bold
             leading-tight
-            tracking-tight
 
             text-3xl
             sm:text-4xl
             md:text-5xl
-            lg:text-[64px]
-            lg:leading-[72px]
+            lg:text-[60px]
+            xl:text-[64px]
+
+            lg:leading-[68px]
+            xl:leading-[72px]
           "
         >
           Auto-Updatable
@@ -69,27 +68,30 @@ function CTAContent() {
       
       <button
         className="
-          mt-8
-          lg:mt-12
+          mt-10
 
           w-full
           sm:w-[220px]
-          lg:w-[201px]
 
-          h-12
-          sm:h-14
+          h-14
           lg:h-16
+
+          mx-auto
+          lg:mx-0
 
           rounded-xl
           bg-white
-          text-[#5468E7]
-          text-base
-          lg:text-[18px]
-          font-bold
 
-          hover:bg-[#F4F5FB]
+          text-[#5468E7]
+          font-bold
+          text-base
+          lg:text-lg
+
           transition-all
           duration-300
+
+          hover:bg-[#EEF1FF]
+          hover:scale-105
         "
       >
         Download Now

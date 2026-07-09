@@ -1,36 +1,28 @@
 import React from "react";
-
 import illustration from "../../assets/cta-action/hero.png";
 import logo from "../../assets/whoareyou/logo symbol.png";
 
 function CTAImage() {
   return (
-    <>
+    <div className="relative w-full flex items-center justify-center lg:justify-start">
       
       <img
         src={illustration}
         alt="Hero Illustration"
         className="
-          absolute
-          left-1/2
-          -translate-x-1/2
-          top-0
-
-          w-[700px]
-          sm:w-[850px]
-          md:w-[1000px]
-          lg:w-[1334px]
+          w-[260px]
+          sm:w-[340px]
+          md:w-[450px]
+          lg:w-[720px]
+          xl:w-[860px]
 
           h-auto
           object-contain
-
-          lg:left-[-181px]
-          lg:translate-x-0
-          lg:top-[-116px]
-
-          z-20
-          pointer-events-none
           select-none
+          pointer-events-none
+
+          lg:-ml-16
+          xl:-ml-24
         "
       />
 
@@ -40,30 +32,32 @@ function CTAImage() {
         alt="Logo"
         className="
           absolute
-          left-6
+
           top-6
+          left-6
 
-          sm:left-10
-          sm:top-10
+          sm:top-8
+          sm:left-8
 
-          md:left-14
-          md:top-12
+          md:top-10
+          md:left-10
 
-          lg:left-[163px]
-          lg:top-[134px]
+          lg:top-28
+          lg:left-24
 
-          w-6
-          h-6
+          xl:left-32
+
+          w-7
+          h-7
+
           sm:w-8
           sm:h-8
+
           lg:w-10
           lg:h-10
-
-          z-30
-          select-none
         "
       />
-    </>
+    </div>
   );
 }
 

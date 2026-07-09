@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "../../assets/light-mode.svg";
+import { Link as ScrollLink } from "react-scroll";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,15 +45,21 @@ function Navbar() {
             </li>
 
             <li>
-              <NavLink to="/services" className={linkClass}>
+              <Link
+                to="/#services"
+                className="font-semibold text-[#606060] hover:text-[#5468E7] transition-colors duration-300"
+              >
                 Services
-              </NavLink>
+              </Link>
             </li>
 
             <li className="relative">
-              <NavLink to="/jobs" className={linkClass}>
+              <Link
+                to="/#jobs"
+                className="font-semibold text-[#606060] hover:text-[#5468E7] transition-colors duration-300"
+              >
                 Jobs
-              </NavLink>
+              </Link>
 
               <span className="absolute -top-2 -right-4 w-5 h-5 rounded-full bg-[#5468E7] text-white text-xs flex items-center justify-center">
                 2
@@ -105,25 +112,23 @@ function Navbar() {
               </li>
 
               <li>
-                <NavLink
-                  to="/services"
-                  className={linkClass}
-                  onClick={() => setIsOpen(false)}
+                <Link
+                  to="/#services"
+                  className="font-semibold text-[#606060] hover:text-[#5468E7] transition-colors duration-300"
                 >
                   Services
-                </NavLink>
+                </Link>
               </li>
 
-              <li className="flex items-center gap-2">
-                <NavLink
-                  to="/jobs"
-                  className={linkClass}
-                  onClick={() => setIsOpen(false)}
+              <li className="relative">
+                <Link
+                  to="/#jobs"
+                  className="font-semibold text-[#606060] hover:text-[#5468E7] transition-colors duration-300"
                 >
                   Jobs
-                </NavLink>
+                </Link>
 
-                <span className="w-5 h-5 rounded-full bg-[#5468E7] text-white text-xs flex items-center justify-center">
+                <span className="absolute -top-2 -right-4 w-5 h-5 rounded-full bg-[#5468E7] text-white text-xs flex items-center justify-center">
                   2
                 </span>
               </li>
