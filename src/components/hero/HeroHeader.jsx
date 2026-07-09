@@ -10,7 +10,7 @@ function HeroHeader() {
     <section className="w-full bg-white overflow-hidden">
       <div className="relative max-w-[1440px] mx-auto">
 
-        {/* Background Shape */}
+        
         <img
           src={path}
           alt=""
@@ -59,7 +59,7 @@ function HeroHeader() {
           "
         >
 
-          {/* Left Content */}
+          
 
           <div
             className="
@@ -169,7 +169,7 @@ function HeroHeader() {
 
           </div>
 
-          {/* Right Image */}
+          
 
           <div
             className="
@@ -185,7 +185,7 @@ function HeroHeader() {
             "
           >
 
-            {/* Purple Card */}
+            
 
             <div
               className="
@@ -213,7 +213,7 @@ function HeroHeader() {
               "
             />
 
-            {/* Hero */}
+            
 
             <img
               src={hero}

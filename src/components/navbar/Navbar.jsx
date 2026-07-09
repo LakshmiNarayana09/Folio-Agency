@@ -17,10 +17,10 @@ function Navbar() {
     <nav className="sticky top-0 z-50 ">
       <div className="max-w-[1296px] mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Navbar */}
+        
         <div className="flex items-center justify-between h-16 lg:h-20">
 
-          {/* Logo */}
+          
           <NavLink
             to="/"
             className="flex items-center shrink-0"
@@ -32,7 +32,7 @@ function Navbar() {
             />
           </NavLink>
 
-          {/* Desktop Menu */}
+          
           <ul className="hidden md:flex items-center gap-8 lg:gap-12">
 
             <li>
@@ -89,7 +89,7 @@ function Navbar() {
 
           </ul>
 
-          {/* Desktop Button */}
+          
 
           <button
             className="
@@ -111,7 +111,7 @@ function Navbar() {
             Contact Us
           </button>
 
-          {/* Mobile Toggle */}
+          
 
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -134,7 +134,7 @@ function Navbar() {
 
         </div>
 
-        {/* Mobile Menu */}
+        
 
         <div
           className={`

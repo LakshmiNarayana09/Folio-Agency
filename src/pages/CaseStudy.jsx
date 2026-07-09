@@ -17,8 +17,9 @@ import RecentWorks from "../components/recent-works/RecentWorks";
 function CaseStudy() {
   return (
     <>
-      <section className="relative w-full bg-white overflow-hidden">
-        <div className="relative max-w-[1497px] mx-auto min-h-screen px-5 sm:px-6 lg:px-8">
+      <section className="relative w-full overflow-hidden bg-white">
+        <div className="relative max-w-[1497px] mx-auto">
+
           
           <img
             src={path}
@@ -29,43 +30,130 @@ function CaseStudy() {
               top-0
               left-1/2
               -translate-x-1/2
-              w-[642px]
+
+              w-[380px]
+              xl:w-[520px]
+              2xl:w-[642px]
+
               h-auto
+
               pointer-events-none
+              select-none
+
               z-0
             "
           />
 
-          
           <Navbar />
 
-          
           <div
             className="
               relative
               z-20
-              flex
-              flex-col
-              lg:flex-row
+
+              grid
+              lg:grid-cols-2
+
               items-center
-              justify-between
-              gap-12
-              pt-16
-              sm:pt-20
-              lg:pt-28
+
+              gap-16
+              lg:gap-8
+
+              px-5
+              sm:px-8
+              md:px-12
+              lg:px-16
+              xl:px-20
+
+              pt-12
+              sm:pt-16
+              lg:pt-24
+
+              pb-16
+              lg:pb-24
             "
           >
+
             
-            <div className="w-full max-w-[467px] order-2 lg:order-1">
+
+            <div
+              className="
+                order-2
+                lg:order-1
+
+                max-w-[520px]
+
+                mx-auto
+                lg:mx-0
+
+                text-center
+                lg:text-left
+              "
+            >
+
               
-              <button className="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-[#5468E7] flex items-center justify-center">
-                <img src={arrow} alt="Arrow" className="w-5 lg:w-6" />
+
+              <button
+                className="
+                  w-12
+                  h-12
+
+                  sm:w-14
+                  sm:h-14
+
+                  lg:w-16
+                  lg:h-16
+
+                  rounded-full
+
+                  bg-[#5468E7]
+
+                  flex
+                  items-center
+                  justify-center
+
+                  mx-auto
+                  lg:mx-0
+
+                  transition-all
+                  duration-300
+
+                  hover:scale-105
+                "
+              >
+                <img
+                  src={arrow}
+                  alt="Arrow"
+                  className="w-5 lg:w-6"
+                />
               </button>
 
               
+
               <div className="mt-10 lg:mt-24">
-                <div className="inline-flex px-5 py-2 rounded-full bg-[#FFBA79]">
-                  <span className="text-white text-xs sm:text-sm font-semibold">
+
+                <div
+                  className="
+                    inline-flex
+
+                    px-5
+                    py-2
+
+                    rounded-full
+
+                    bg-[#FFBA79]
+                  "
+                >
+                  <span
+                    className="
+                      text-white
+
+                      text-xs
+                      sm:text-sm
+
+                      font-semibold
+                    "
+                  >
                     Featured Product
                   </span>
                 </div>
@@ -73,107 +161,195 @@ function CaseStudy() {
                 <h1
                   className="
                     mt-6
+
+                    font-bold
+
+                    leading-none
+
+                    text-[#232340]
+
                     text-5xl
                     sm:text-6xl
                     md:text-7xl
-                    lg:text-[110px]
-                    font-bold
-                    leading-none
-                    text-[#232340]
+                    lg:text-8xl
+                    xl:text-[110px]
                   "
                 >
-                  Bento<span className="text-[#5468E7]">.</span>
+                  Bento
+                  <span className="text-[#5468E7]">.</span>
                 </h1>
 
                 <p
                   className="
                     mt-6
-                    max-w-[266px]
+
+                    max-w-[280px]
+
+                    mx-auto
+                    lg:mx-0
+
                     text-lg
                     sm:text-xl
-                    lg:text-[24px]
+                    lg:text-2xl
+
                     font-bold
+
                     leading-8
+
                     text-[#232340]
                   "
                 >
-                  Drag &amp; Drop 3D Visual Design System.
+                  Drag & Drop 3D Visual Design System.
                 </p>
+
               </div>
 
               
-              <div className="flex flex-col sm:flex-row gap-8 lg:gap-14 mt-12 lg:mt-32">
-                <div className="flex gap-4">
+
+              <div
+                className="
+                  mt-12
+                  lg:mt-24
+
+                  grid
+                  sm:grid-cols-2
+
+                  gap-8
+                  lg:gap-12
+                "
+              >
+
+                <div className="flex gap-4 justify-center lg:justify-start">
                   <img
                     src={globe}
                     alt=""
                     className="w-10 h-10 object-contain"
                   />
-                  <p className="max-w-[166px] text-base lg:text-lg font-semibold text-[#5468E7]">
+
+                  <p
+                    className="
+                      max-w-[170px]
+
+                      text-base
+                      lg:text-lg
+
+                      font-semibold
+
+                      text-[#5468E7]
+                    "
+                  >
                     Global Digital Agency of Record
                   </p>
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex gap-4 justify-center lg:justify-start">
                   <img
                     src={briefcase}
                     alt=""
                     className="w-10 h-10 object-contain"
                   />
-                  <p className="max-w-[201px] text-base lg:text-lg font-semibold text-[#5468E7]">
+
+                  <p
+                    className="
+                      max-w-[210px]
+
+                      text-base
+                      lg:text-lg
+
+                      font-semibold
+
+                      text-[#5468E7]
+                    "
+                  >
                     5 Years of Digital Marketing Excellence
                   </p>
                 </div>
+
               </div>
+
             </div>
 
             
+
             <div
               className="
-                relative
-                w-full
-                max-w-[900px]
-                lg:max-w-[1174px]
                 order-1
                 lg:order-2
+
+                relative
+
                 flex
                 justify-center
+                items-center
               "
             >
+
               
               <div
                 className="
                   absolute
-                  right-0
-                  top-[10%]
-                  w-[55%]
-                  h-[80%]
-                  rounded-3xl
-                  lg:rounded-[40px]
+
+                  w-[72%]
+                  h-[82%]
+
+                  rounded-[28px]
+
                   bg-[#5468E7]
+
+                  left-1/2
+                  -translate-x-1/2
+
+                  lg:left-auto
+                  lg:translate-x-0
+                  lg:right-6
+
+                  xl:w-[620px]
+                  xl:h-[760px]
+
+                  xl:rounded-[40px]
                 "
               />
 
               
+
               <img
                 src={hero}
                 alt="Bento Hero"
                 className="
                   relative
+
                   z-10
+
                   w-full
+
+                  max-w-[320px]
+                  sm:max-w-[450px]
+                  md:max-w-[580px]
+                  lg:max-w-[700px]
+                  xl:max-w-[900px]
+                  2xl:max-w-[1174px]
+
                   h-auto
+
                   object-contain
+
+                  pointer-events-none
+                  select-none
                 "
               />
+
             </div>
+
           </div>
+
         </div>
       </section>
 
 
       <Overview />
+
       <Numbers />
+
       <div
         className="
           relative
@@ -193,11 +369,15 @@ function CaseStudy() {
         "
       >
         <VisualIdentity />
+
       </div>
       
       <CTAAction />
+
       <RecentWorks />
+
       <ContactCTA />
+      
       <Footer />
 
     </>
