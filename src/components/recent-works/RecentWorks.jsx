@@ -1,7 +1,7 @@
 import React from "react";
 import RecentWorksHeader from "./RecentWorksHeader";
 import WorkCard from "./WorkCard";
-import workData from "./WorkData";
+import workData from "./workData";
 
 function RecentWorks() {
   return (
