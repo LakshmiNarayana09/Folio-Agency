@@ -68,7 +68,7 @@ function Achievement() {
 
           
           <div className="relative w-full lg:w-1/2 flex justify-center items-center min-h-[350px] sm:min-h-[450px] lg:min-h-[690px]">
-            {/* Pink Circle */}
+            
             <div
               className="
                 absolute

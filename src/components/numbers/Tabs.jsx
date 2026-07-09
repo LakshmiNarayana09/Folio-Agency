@@ -4,8 +4,6 @@ function Tabs() {
   return (
     <div className="w-[721px] mt-16">
 
-      
-
       <div className="flex items-center">
 
         <div className="w-[237px] border-t border-white"></div>
@@ -13,8 +11,6 @@ function Tabs() {
         <div className="w-[484px] border-t border-[#606060]"></div>
 
       </div>
-
-      
 
       <div className="flex justify-between mt-8">
 

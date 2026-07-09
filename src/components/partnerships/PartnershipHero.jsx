@@ -84,7 +84,7 @@ function PartnershipHero() {
 
       
       <div className="mt-16 md:mt-20 lg:mt-28 flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16">
-        {/* Left */}
+        
         <div className="w-full lg:max-w-[467px] text-center lg:text-left">
           <div className="inline-flex px-5 py-2 sm:px-6 sm:py-3 rounded-full bg-[#C8B8FF] text-white font-semibold text-xs sm:text-sm">
             Featured Product

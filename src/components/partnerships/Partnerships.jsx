@@ -10,7 +10,6 @@ function Partnerships() {
         
         <PartnershipHero />
 
-        
         <div className="mt-12 sm:mt-16 md:mt-20 lg:mt-[140px]">
           <div className="flex flex-col gap-8 sm:gap-10 lg:gap-12">
             {partnershipData.map((item) => (
